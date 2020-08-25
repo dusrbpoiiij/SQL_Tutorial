@@ -1,4 +1,6 @@
+DROP DATABASE company;
 CREATE DATABASE company;
+USE company;
 
 CREATE TABLE employee (
 	emp_id INT PRIMARY KEY,
@@ -81,6 +83,9 @@ SET branch_id = 3
 WHERE emp_id = 106;
 INSERT INTO employee VALUES(107, 'Andy', 'Bernard', '1973-07-22', 'M', 65000, 106, 3);
 INSERT INTO employee VALUES(108, 'Jim', 'Halpert', '1978-10-01', 'M', 71000, 106, 3);
+
+-- Buffalo
+INSERT INTO branch VALUES(4, 'Buffalo', NULL,  NULL);
 
 
 -- BRANCH SUPPLIER
